@@ -1,2 +1,4 @@
-./idea
-./vscode
+# IDEs
+.vscode
+.idea
+.atom
