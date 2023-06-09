@@ -27,7 +27,7 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 	role := r.FormValue("myRole")
 	email := r.FormValue("myEmail")
 	gender := ""
-	checkboxValue := ""
+	checkboxValue := "no"
 
 	getGender := r.FormValue("myGender")
 	if getGender == "on" {
@@ -42,7 +42,7 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 	} else {
 		checkboxValue = "no"
 	}
-	
+
 	fmt.Fprintf(w, "Name = %s\n", name)
 	fmt.Fprintf(w, "Role = %s\n", role)
 	fmt.Fprintf(w, "Email = %s\n", email)
